@@ -23,6 +23,7 @@ en:
       activity_log: "Activity Log"
       timeago: "%{time} ago"
       you: "You"
+      search: "Search"
     buttons:
       save: "Save"
       submit: "Submit"
@@ -89,15 +90,18 @@ en:
 
   courses:
     general:
+      course: "course"
       active: "Active"
     create:
       date_invalid: "can't be greater than end date"
     index:
-      course: "course"
       from: "From"
       to: "to"
       no_course: "You haven't been assigned to any course"
       enrolled_in: "You have been assigned to %{course_count}"
+    search:
+      result_found: "%{course_count} found"
+      no_course_found: "Cannot not found any course with provided keyword"
     show:
       all_members: "All members of %{course}"
       supervisors: "Supervisors: "

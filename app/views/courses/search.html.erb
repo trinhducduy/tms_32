@@ -2,13 +2,13 @@
   <div id="courses" class="col-md-8 col-md-offset-2">
     <% if @courses.count > 0 %>
       <h3>
-        <%= t ".enrolled_in", course_count: pluralize(@courses.count,
+        <%= t ".result_found", course_count: pluralize(@courses.count,
           t("courses.general.course")) %>
       </h3>
       <%= render @courses %>
       <%= will_paginate %>
     <% else %>
-      <p><%= t(".no_course") %></p>
+      <p><%= t(".no_course_found") %></p>
     <% end %>
   </div>
 </div>

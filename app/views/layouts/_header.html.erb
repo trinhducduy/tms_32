@@ -9,6 +9,16 @@
       </button>
       <%= link_to t("application.general.TM"), root_path, class: "navbar-brand" %>
     </div>
+
+    <%= form_tag courses_path, method: :get,
+      role: :search, class: "navbar-form navbar-left" %>
+      <div class="form-group">
+        <%= hidden_field_tag :action_type, "search" %>
+        <%= text_field_tag :q, nil, placeholder: t("application.general.search"),
+          class: "form-control" %>
+      </div>
+    </form>
+
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to t("application.general.about"), about_path %></li>
